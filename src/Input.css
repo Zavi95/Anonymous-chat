@@ -1,21 +1,28 @@
 .input_div{
     margin:20px 0 0 20px;
-    height: 100%;
+    height: auto;
     width:100%;
+    border:2px solid black;
+    background-color:lightgreen;
 
 }
 
 .input-form{
     display:flex;
     margin-left:10px;
+    margin-top:80px;
+    
+    width:285px;
+    
 
 }
 
 .input_button{
     margin-left:5px;
-    background-color: red;
+    background-color: rgb(225, 33, 33);
     border-radius: 7px;
     width:auto;
     cursor:pointer;
 }
+
 
