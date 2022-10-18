@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import "./Upload.css";
 
 const Upload = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div>
+    <div className="image-div">
       {selectedImage && (
         <div>
           <img
+            className="image"
             alt="not fount"
             width={"250px"}
             src={URL.createObjectURL(selectedImage)}
