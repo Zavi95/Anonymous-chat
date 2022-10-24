@@ -24,6 +24,10 @@ function Input() {
     setImage(image.concat(<Upload image={image} />));
   };
 
+  for (let i = 0; i < image.length; i++) {
+    <Upload />;
+  }
+
   return (
     <div className="input_div">
       <form className="input-form">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Upload.css";
 
-const Upload = (image) => {
+const Upload = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
