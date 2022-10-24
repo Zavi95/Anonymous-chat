@@ -5,10 +5,14 @@
 }
 
 .image{
-    padding-bottom:20px;
-    width:100%;
+    justify-content: center;
+    width:250px;
+    height:auto;
+    border:3px solid red;
+
 }
 
 .button-image{
+    
     margin-bottom:40%;
 }

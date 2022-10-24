@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Upload.css";
 
-const Upload = () => {
+const Upload = (image) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
@@ -11,16 +11,13 @@ const Upload = () => {
           <img
             className="image"
             alt="not fount"
-            width={"250px"}
             src={URL.createObjectURL(selectedImage)}
           />
-          <br />
+
           <button onClick={() => setSelectedImage(null)}>Remove</button>
         </div>
       )}
-      <br />
 
-      <br />
       <input
         type="file"
         className="button-image"

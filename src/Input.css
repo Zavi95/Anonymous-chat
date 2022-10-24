@@ -1,8 +1,9 @@
 .input_div{
     margin:20px 0 0 20px;
-    height: auto;
+    height: 100%;
     width:100%;
     border:2px solid black;
+    border-radius:11px;
     background-color:lightgreen;
 
 }

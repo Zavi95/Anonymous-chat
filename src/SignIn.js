@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./SignIn.css";
 import { Link } from "react-router-dom";
 
+//React JS form validation?
+
 function SignIn() {
   return (
-    <Link to="/signin" className="signin">
+    <Link to="/" className="signin">
       <div className="signin-page">
-        <h1>Log In</h1>
         <form className="signin-box">
-          <input type="text" className="input" placeholder="Username" />
-          <input type="password" className="input" placeholder="Password" />
-          <input type="submit" className="input" value="Login" />
+          <input type="email" className="user-input" placeholder="Email" />
+          <input
+            type="password"
+            className="user-input"
+            placeholder="Password"
+          />
+          <Link to="/home" className="signin-page">
+            {" "}
+            <input type="submit" className="user-input" value="Login" />
+          </Link>
         </form>
       </div>
     </Link>

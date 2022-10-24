@@ -21,7 +21,7 @@ function Input() {
   };
 
   const AddImage = () => {
-    setImage(image.concat(<Upload key={image.lenght} />));
+    setImage(image.concat(<Upload image={image} />));
   };
 
   return (
